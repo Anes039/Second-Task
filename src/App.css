@@ -1,0 +1,14 @@
+/* App.css */
+
+.App {
+  text-align: center;
+  overflow-x:hidden;
+}
+
+.gridContainer {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 0rem;
+  justify-content: center;
+  margin-top: 20px; /* Add margin to center the grid within the container */
+}

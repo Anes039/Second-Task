@@ -1,0 +1,90 @@
+/* Default styles for larger screens */
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.card_container {
+    margin: 1.7em;
+    background: white;
+    border-radius: 8px;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    width: calc(82% - 3.4em);
+    padding-bottom: 0.7em;
+    text-align: center;
+}
+
+.btn {
+    border: solid 1px blue;
+    margin-top: 1.5em;
+    margin-left: 2.8em;
+    color: blue;
+    background: white;
+    padding: 5px 4.5em 5px 4.5em;
+    cursor: pointer;
+    width: 71%;
+    transition: transform 0.3s ease;
+}
+
+.btn:hover {
+    cursor: pointer;
+    background: blue;
+    color: white;
+    animation: pulse 1s infinite;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+.domain {
+    position: relative;
+    margin-top: 0.6em;
+    font-size: 1.6em;
+    font-weight: 500;
+}
+
+.price {
+    margin-top: 1.8em;
+    position: relative;
+    font-size: 1.3em;
+    left: 3%;
+    font-weight: bold;
+}
+
+.text {
+    font-size: 13px;
+    opacity: 0.5;
+    padding-left: 18px;
+}
+
+/* Media query for smaller screens */
+@media (max-width: 800px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card_container {
+        width: 90%;
+        margin: 1em auto;
+    }
+
+    .btn {
+        padding: 5px 20px; /* Adjust padding to make the button smaller */
+        margin-left: 1.7em;
+    }
+    
+    /* Add more responsive styles as needed */
+}
