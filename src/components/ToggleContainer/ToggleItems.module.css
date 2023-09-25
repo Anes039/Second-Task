@@ -1,0 +1,46 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    width: 64.50%;
+    border: 1px solid gray;
+    border-radius: 5px;
+    margin-left: 17em;
+    background: white;
+    overflow: hidden; /* Hide overflow when text is collapsed */
+    transition: height 0.3s; /* Add a smooth height transition */
+  }
+  
+  .expanded {
+    height: auto; /* Expand height when the text is shown */
+  }
+  
+  .title {
+    position: relative;
+    align-items:center;
+    justify-content:center;
+    
+  }
+  
+  .text {
+    font-size: 12px;
+    position: relative; /* Change to relative */
+    display: none; /* Hide text by default */
+    margin-left: 1em;
+    transition: opacity 0.3s; /* Add a smooth opacity transition */
+  }
+  
+  .showText {
+    display: block; /* Showext when expanded */
+    margin-top:0;
+    opacity: 1; /* Make text fully visible when expanded */
+    position:relative;
+    bottom:1.6em;
+  }
+  
+  .icon {
+    position: absolute;
+  left: 78.6%;
+    
+    
+  }
+  
