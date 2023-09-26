@@ -37,10 +37,13 @@
     bottom:1.6em;
   }
   
-  .icon {
-    position: absolute;
-  left: 78.6%;
-    
-    
+
+  @media (max-width:800px){
+    .icon {
+      position: absolute;
+      left: 103.3%;
+      margin-top: 10px;
+    }
   }
+ 
   

@@ -55,4 +55,10 @@
         position:relative;
         right:15%;
     }
+    .content{
+        display:flex;
+        position:relative;
+        right:37%;
+        top:-40%;
+    }
 }
